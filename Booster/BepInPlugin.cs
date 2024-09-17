@@ -7,16 +7,9 @@ using System.Reflection;
 
 namespace Booster
 {
-    internal static class MyPluginInfo
-    {
-        internal const string PLUGIN_GUID = "id107.booster";
-        internal const string PLUGIN_NAME = "Booster";
-        internal const string PLUGIN_VERSION = "0.0.0";
-    }
-
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     [BepInProcess("Void Crew.exe")]
-    [BepInDependency("VoidManager")]
+    [BepInDependency(VoidManager.MyPluginInfo.PLUGIN_GUID)]
     public class BepinPlugin : BaseUnityPlugin
     {
         public static bool HostHasMod { get; private set; } = false;
@@ -39,7 +32,7 @@ namespace Booster
                 HostHasMod = true;
                 return;
             }
-            HostHasMod = VoidManager.MPModChecks.MPModCheckManager.Instance.NetworkedPeerHasMod(PhotonNetwork.MasterClient, MyPluginInfo.PLUGIN_GUID);
+            HostHasMod = VoidManager.MPModChecks.NetworkedPeerManager.Instance.NetworkedPeerHasMod(PhotonNetwork.MasterClient, MyPluginInfo.PLUGIN_GUID);
         }
     }
 }

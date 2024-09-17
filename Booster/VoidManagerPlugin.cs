@@ -4,10 +4,12 @@ namespace Booster
 {
     public class VoidManagerPlugin : VoidManager.VoidPlugin
     {
-        public override MultiplayerType MPType => MultiplayerType.Host;
+        public override MultiplayerType MPType => MultiplayerType.Session;
 
-        public override string Author => "18107";
+        public override string Author => MyPluginInfo.PLUGIN_AUTHORS;
 
-        public override string Description => "Allows multiple boosts to be activated at the same time with diminishing returns";
+        public override string Description => MyPluginInfo.PLUGIN_DESCRIPTION;
+
+        public override string ThunderstoreID => MyPluginInfo.PLUGIN_THUNDERSTORE_ID;
     }
 }
