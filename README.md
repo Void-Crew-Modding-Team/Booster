@@ -4,17 +4,17 @@
 
 # Booster
 
-Version 0.0.1  
+Version 0.1.0  
 For Game Version 0.27.0  
-Developed by 18107  
-Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.1.8 
+Developed by 18107, Dragon  
+Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.1.8
 
 
 ---------------------
 
 ### 💡 Function - **More boost**
 
-- Allows multiple boosts to be activated at the same time with diminishing returns
+- Allows multiple boosts to be activated at the same time with diminishing returns.
 
 ### 🎮 Client Usage
 
@@ -27,7 +27,7 @@ Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.1.8
 - ✅ Host
   - The host needs this mod.
 - ✅ Session
-  - Requires the room to be marked as Mod_Session.
+  - Marks the room as Mod_Session when hosting.
 
 ---------------------
 

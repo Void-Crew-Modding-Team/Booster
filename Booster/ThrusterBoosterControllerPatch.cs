@@ -11,6 +11,7 @@ namespace Booster
         [HarmonyPatch("GetReadiedBooster")]
         static void GetReadiedBooster(List<ThrusterBooster> ____thrusterBoosters, ref int index, ref ThrusterBooster __result)
         {
+            if (!VoidManagerPlugin.Enabled) return;
             if (__result != null) return;
 
             for (int i = 0; i < ____thrusterBoosters.Count; i++)

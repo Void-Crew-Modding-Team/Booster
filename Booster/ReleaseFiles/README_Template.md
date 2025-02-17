@@ -14,7 +14,7 @@ Requires: [Dependencies]
 
 ### 💡 Function - **More boost**
 
-- Allows multiple boosts to be activated at the same time with diminishing returns
+- [Description]
 
 ### 🎮 Client Usage
 
@@ -27,7 +27,7 @@ Requires: [Dependencies]
 - ✅ Host
   - The host needs this mod.
 - ✅ Session
-  - Requires the room to be marked as Mod_Session.
+  - Marks the room as Mod_Session when hosting.
 
 ---------------------
 
